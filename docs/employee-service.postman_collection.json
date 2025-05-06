@@ -1,0 +1,133 @@
+{
+  "info": {
+    "name": "Employee Service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Criar Funcionário",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"João Silva\",\n    \"email\": \"joao.silva@example.com\",\n    \"cargo\": \"Analista\",\n    \"departamento\": \"TI\",\n    \"dataContratacao\": \"2024-05-01\",\n    \"status\": \"ACTIVE\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8088/api/v1/employees/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "v1",
+            "employees",
+            "register"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar Todos",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8088/api/v1/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "v1",
+            "employees"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar por ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8088/api/v1/employees/{{employeeId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "v1",
+            "employees",
+            "{{employeeId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Atualizar Funcionário",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"João da Silva\",\n    \"email\": \"joao.silva@example.com\",\n    \"cargo\": \"Senior Analyst\",\n    \"departamento\": \"TI\",\n    \"dataContratacao\": \"2024-05-01\",\n    \"status\": \"ACTIVE\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8088/api/v1/employees/{{employeeId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "v1",
+            "employees",
+            "{{employeeId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Deletar Funcionário",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8088/api/v1/employees/{{employeeId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8088",
+          "path": [
+            "api",
+            "v1",
+            "employees",
+            "{{employeeId}}"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "employeeId",
+      "value": "COLE_AQUI_O_UUID_DO_EMPLOYEE"
+    }
+  ]
+}

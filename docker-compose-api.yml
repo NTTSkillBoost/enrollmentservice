@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: activity-management-service-postgres
+    environment:
+      POSTGRES_DB: nkbost-activity-management-db
+      PPOSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Postgres2025!
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DATABASE_USERNAME}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: employee-service-api
+    ports:
+      - "9093:9093"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbit:
+        condition: service_healthy
+
+volumes:
+  pgdata:
