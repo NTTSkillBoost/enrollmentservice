@@ -28,7 +28,7 @@ import java.util.UUID;
 
 @Slf4j
 @RestController
-@RequestMapping("/v1/activities")
+@RequestMapping("/v1/enrollments")
 @RequiredArgsConstructor
 public class EnrollmentController {
 
@@ -92,6 +92,20 @@ public class EnrollmentController {
     public ResponseEntity<Void> delete(@PathVariable UUID id) {
         if (deleteEnrollmentService.delete(id)) {
             return ResponseEntity.noContent().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @GetMapping("/exists")
+    public ResponseEntity<Void> checkEnrollment(
+            @RequestParam UUID studentId,
+            @RequestParam UUID courseId) {
+
+        boolean enrolled = getEnrollmentService.isStudentEnrolled(studentId, courseId);
+
+        if (enrolled) {
+            return ResponseEntity.ok().build();
         } else {
             return ResponseEntity.notFound().build();
         }

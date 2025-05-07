@@ -10,4 +10,5 @@ public interface EnrollmentRepositoryPort {
     Enrollment findById(UUID id);
     List<Enrollment> findAll();
     Enrollment findByCourseId(UUID courseId);
+    boolean isStudentEnrolled(UUID studentId, UUID courseId);
 }

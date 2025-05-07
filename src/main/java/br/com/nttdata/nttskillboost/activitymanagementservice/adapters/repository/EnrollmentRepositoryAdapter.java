@@ -2,6 +2,7 @@ package br.com.nttdata.nttskillboost.activitymanagementservice.adapters.reposito
 
 import br.com.nttdata.nttskillboost.activitymanagementservice.adapters.gateway.CourseClient;
 import br.com.nttdata.nttskillboost.activitymanagementservice.adapters.gateway.EmployeeClient;
+import br.com.nttdata.nttskillboost.activitymanagementservice.adapters.gateway.ProgressEventPublisher;
 import br.com.nttdata.nttskillboost.activitymanagementservice.domain.entity.Enrollment;
 import br.com.nttdata.nttskillboost.activitymanagementservice.ports.out.EnrollmentRepositoryPort;
 import jakarta.persistence.EntityNotFoundException;
@@ -17,6 +18,7 @@ import java.util.UUID;
 public class EnrollmentRepositoryAdapter implements EnrollmentRepositoryPort {
 
     private final EnrollmentJpaRepository enrollmentRepository;
+    private final ProgressEventPublisher progressEventPublisher;
     private final EmployeeClient employeeClient;
     private final CourseClient courseClient;
 
@@ -33,7 +35,16 @@ public class EnrollmentRepositoryAdapter implements EnrollmentRepositoryPort {
                 throw new EntityNotFoundException("Curso com ID " + enrollment.getCourseId() + " não encontrado");
             }
 
-            return enrollmentRepository.save(enrollment);
+            Enrollment save = enrollmentRepository.save(enrollment);
+            if (save.getId() != null) {
+                progressEventPublisher.sendProgressEvent(
+                        enrollment.getStudentId(),
+                        enrollment.getCourseId(),
+                        "WIP"
+                );
+            }
+
+            return save;
         }
 
         return enrollment;
@@ -57,5 +68,10 @@ public class EnrollmentRepositoryAdapter implements EnrollmentRepositoryPort {
     @Override
     public Enrollment findByCourseId(UUID courseId) {
         return enrollmentRepository.findByCourseId(courseId);
+    }
+
+    @Override
+    public boolean isStudentEnrolled(UUID studentId, UUID courseId) {
+        return enrollmentRepository.existsByStudentIdAndCourseId(studentId, courseId);
     }
 }

@@ -24,4 +24,9 @@ public class GetEnrollmentService implements GetEnrollmentUseCase {
     public List<Enrollment> findAll() {
         return enrollmentRepositoryPort.findAll();
     }
+
+    @Override
+    public boolean isStudentEnrolled(UUID studentId, UUID courseId) {
+        return enrollmentRepositoryPort.isStudentEnrolled(studentId, courseId);
+    }
 }

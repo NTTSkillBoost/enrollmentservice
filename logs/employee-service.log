@@ -2198,3 +2198,1473 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
 
+2025-05-06 11:24:34 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 33056 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 11:24:34 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 11:24:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 11:24:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 11:24:34 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 11:24:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 11:24:34 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 11:24:34 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 11:24:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 11:24:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 1 JPA repository interface.
+2025-05-06 11:24:37 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0f10430c-9358-3068-af96-d6c09f92fdd3
+2025-05-06 11:24:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 11:24:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 11:24:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 11:24:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 11:24:38 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 11:24:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3962 ms
+2025-05-06 11:24:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 11:24:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c76762
+2025-05-06 11:24:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 11:24:40 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 11:24:40 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.102s)
+2025-05-06 11:24:40 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 11:24:40 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 11:24:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 11:24:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 11:24:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 11:24:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 11:24:41 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 11:24:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 11:24:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 11:24:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 11:24:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 11:24:44 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 11:24:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 11:24:47 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 11:24:49 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 11:24:49 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 11:24:49 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 11:24:49 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 11:24:50 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 11:24:50 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 11:24:50 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746541490857 with initial instances count: 3
+2025-05-06 11:24:50 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 11:24:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746541490879, current=UP, previous=STARTING]
+2025-05-06 11:24:50 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 11:24:50 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 11:24:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 11:24:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 11:24:51 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 11:24:52 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 11:24:53 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 11:24:53 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 22.805 seconds (process running for 23.556)
+2025-05-06 11:29:50 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 11:34:50 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 12:38:26 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m16s14ms634µs400ns).
+2025-05-06 13:08:24 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m57s661ms819µs800ns).
+2025-05-06 13:10:03 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 13:15:03 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:19:33 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 28788 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 19:19:33 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 19:19:33 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:19:33 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:19:33 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 19:19:33 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:19:33 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:19:33 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 19:19:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 19:19:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 851 ms. Found 1 JPA repository interface.
+2025-05-06 19:19:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 19:19:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 19:19:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 19:19:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 19:19:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 19:19:47 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 19:19:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13783 ms
+2025-05-06 19:19:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:19:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:19:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:20:01 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2025-05-06 19:20:02 [main] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Timed out waiting for in-flight spans to send
+2025-05-06 19:20:02 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-06 19:20:02 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-06 19:20:02 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.com.nttdata.nttskillboost.activitymanagementservice.RunApplication.main(RunApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:138)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:156)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 17 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to 192.168.100.197:5436 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+	... 23 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 35 common frames omitted
+2025-05-06 19:20:32 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 9620 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 19:20:32 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 19:20:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:20:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:20:32 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 19:20:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:20:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:20:32 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 19:20:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 19:20:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 307 ms. Found 1 JPA repository interface.
+2025-05-06 19:20:36 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 19:20:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 19:20:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 19:20:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 19:20:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 19:20:38 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 19:20:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5551 ms
+2025-05-06 19:20:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:20:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:20:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:20:43 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: the database system is starting up
+------------------------------------------------------------------------------------
+SQL State  : 57P03
+Error Code : 0
+Message    : FATAL: the database system is starting up
+
+2025-05-06 19:20:44 [main] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Timed out waiting for in-flight spans to send
+2025-05-06 19:20:44 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-06 19:20:44 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-06 19:20:44 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: the database system is starting up
+------------------------------------------------------------------------------------
+SQL State  : 57P03
+Error Code : 0
+Message    : FATAL: the database system is starting up
+
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at br.com.nttdata.nttskillboost.activitymanagementservice.RunApplication.main(RunApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: the database system is starting up
+------------------------------------------------------------------------------------
+SQL State  : 57P03
+Error Code : 0
+Message    : FATAL: the database system is starting up
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 10 common frames omitted
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: the database system is starting up
+------------------------------------------------------------------------------------
+SQL State  : 57P03
+Error Code : 0
+Message    : FATAL: the database system is starting up
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:138)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:156)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 17 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: the database system is starting up
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:704)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:59)
+	... 23 common frames omitted
+2025-05-06 19:21:57 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 8408 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 19:21:57 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 19:21:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:21:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:21:57 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 19:21:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 19:21:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 19:21:57 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 19:21:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 19:21:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 240 ms. Found 1 JPA repository interface.
+2025-05-06 19:22:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 19:22:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 19:22:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 19:22:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 19:22:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 19:22:01 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 19:22:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4017 ms
+2025-05-06 19:22:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 19:22:03 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77c1a7ce
+2025-05-06 19:22:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 19:22:03 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 19:22:03 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.105s)
+2025-05-06 19:22:03 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 19:22:03 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 19:22:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 19:22:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 19:22:04 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 19:22:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 19:22:04 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 19:22:04 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 19:22:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 19:22:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 19:22:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 19:22:07 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 19:22:10 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 19:22:11 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 19:22:13 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 19:22:13 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 19:22:13 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 19:22:13 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 19:22:13 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 19:22:13 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 19:22:13 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 19:22:14 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 19:22:14 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 19:22:14 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 19:22:14 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746570134529 with initial instances count: 3
+2025-05-06 19:22:14 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 19:22:14 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746570134539, current=UP, previous=STARTING]
+2025-05-06 19:22:14 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 19:22:14 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 19:22:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 19:22:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 19:22:14 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 19:22:15 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 19:22:16 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 19:22:16 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 23.396 seconds (process running for 24.304)
+2025-05-06 19:27:13 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:32:13 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:37:13 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:42:13 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:47:14 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:52:14 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 19:56:22 [http-nio-8885-exec-4] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 19:56:22 [http-nio-8885-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-06 19:56:23 [http-nio-8885-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 233 ms
+2025-05-06 19:56:27 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'employeeService' succeeded:
+2025-05-06 19:56:27 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T19:56:27.914447800-03:00[America/Sao_Paulo]: CircuitBreaker 'employeeService' recorded a successful call. Elapsed time: 134 ms
+2025-05-06 19:56:28 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'courseService' succeeded:
+2025-05-06 19:56:28 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T19:56:28.678818900-03:00[America/Sao_Paulo]: CircuitBreaker 'courseService' recorded a successful call. Elapsed time: 738 ms
+2025-05-06 19:56:29 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'enrollmentService' succeeded:
+2025-05-06 19:56:29 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T19:56:29.075226200-03:00[America/Sao_Paulo]: CircuitBreaker 'enrollmentService' recorded a successful call. Elapsed time: 5042 ms
+2025-05-06 19:57:15 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:02:15 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:07:15 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:12:15 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:12:44 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 20:12:44 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746573164099, current=DOWN, previous=UP]
+2025-05-06 20:12:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:12:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 20:12:44 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:12:44 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 20:12:46 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:12:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 20:12:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 20:12:47 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 20:12:50 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 20:12:50 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 20:12:50 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-06 20:13:07 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 33208 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 20:13:07 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 20:13:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:13:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:13:07 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 20:13:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:13:07 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:13:07 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 20:13:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 20:13:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 446 ms. Found 1 JPA repository interface.
+2025-05-06 20:13:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 20:13:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 20:13:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:13:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 20:13:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 20:13:18 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 20:13:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11400 ms
+2025-05-06 20:13:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 20:13:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8d5b303
+2025-05-06 20:13:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 20:13:23 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 20:13:23 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.173s)
+2025-05-06 20:13:23 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 20:13:23 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 20:13:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 20:13:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 20:13:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 20:13:25 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 20:13:25 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 20:13:25 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 20:13:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 20:13:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:13:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 20:13:32 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 20:13:35 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:13:37 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:13:39 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:13:39 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 20:13:40 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 20:13:40 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 20:13:40 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 20:13:40 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 20:13:40 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 20:13:41 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 20:13:41 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 20:13:41 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 20:13:41 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746573221850 with initial instances count: 3
+2025-05-06 20:13:41 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 20:13:41 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746573221895, current=UP, previous=STARTING]
+2025-05-06 20:13:41 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:13:42 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:13:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:13:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 20:13:42 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 20:13:43 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:13:44 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:13:44 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 43.451 seconds (process running for 45.071)
+2025-05-06 20:18:40 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:23:40 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:28:40 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:28:45 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 20:28:45 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746574125328, current=DOWN, previous=UP]
+2025-05-06 20:28:45 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:28:45 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:28:45 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 20:28:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 20:28:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:28:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 20:28:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 20:28:59 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 12328 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 20:28:59 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 20:28:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:28:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:28:59 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 20:28:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:28:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:28:59 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 20:29:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 20:29:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interface.
+2025-05-06 20:29:03 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 20:29:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 20:29:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:29:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 20:29:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 20:29:05 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 20:29:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6208 ms
+2025-05-06 20:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 20:29:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6391d34f
+2025-05-06 20:29:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 20:29:10 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 20:29:10 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.079s)
+2025-05-06 20:29:10 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 20:29:10 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 20:29:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 20:29:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 20:29:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 20:29:11 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 20:29:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 20:29:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 20:29:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 20:29:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:29:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 20:29:20 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 20:29:23 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:29:25 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:29:27 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:29:28 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 20:29:28 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 20:29:28 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 20:29:28 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 20:29:29 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 20:29:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 20:29:30 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 20:29:30 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 20:29:30 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 20:29:30 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746574170323 with initial instances count: 4
+2025-05-06 20:29:30 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 20:29:30 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746574170379, current=UP, previous=STARTING]
+2025-05-06 20:29:30 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:29:30 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:29:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:29:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 20:29:31 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 20:29:32 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:29:33 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:29:33 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 38.516 seconds (process running for 39.9)
+2025-05-06 20:34:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:35:35 [http-nio-8885-exec-3] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 20:35:35 [http-nio-8885-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-06 20:35:35 [http-nio-8885-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-06 20:39:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:44:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:49:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:54:29 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:56:20 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 20:56:20 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746575780494, current=DOWN, previous=UP]
+2025-05-06 20:56:20 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:56:20 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 20:56:20 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:56:20 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 20:56:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 20:56:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 20:56:23 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 20:56:26 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 20:56:26 [DiscoveryClient-%d] WARN  c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+2025-05-06 20:56:26 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 20:56:26 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-06 20:56:32 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 19680 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 20:56:32 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 20:56:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:56:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:56:32 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 20:56:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 20:56:32 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 20:56:32 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 20:56:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 20:56:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 317 ms. Found 1 JPA repository interface.
+2025-05-06 20:56:36 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=0c92680b-1fff-3037-9559-47586158e04d
+2025-05-06 20:56:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 20:56:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:56:37 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 20:56:37 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 20:56:38 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 20:56:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5124 ms
+2025-05-06 20:56:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 20:56:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7444714e
+2025-05-06 20:56:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 20:56:40 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 20:56:40 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.071s)
+2025-05-06 20:56:40 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 20:56:40 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 20:56:40 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 20:56:40 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 20:56:40 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 20:56:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 20:56:41 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 20:56:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 20:56:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 20:56:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 20:56:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 20:56:44 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 20:56:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:56:47 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:56:49 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:56:49 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 20:56:49 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 20:56:49 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 20:56:49 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 20:56:49 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 20:56:49 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 20:56:50 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 20:56:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 20:56:50 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 20:56:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746575810194 with initial instances count: 3
+2025-05-06 20:56:50 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 20:56:50 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746575810205, current=UP, previous=STARTING]
+2025-05-06 20:56:50 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 20:56:50 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 20:56:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 20:56:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 20:56:50 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 20:56:51 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:56:52 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 20:56:52 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 23.929 seconds (process running for 24.794)
+2025-05-06 20:57:17 [http-nio-8885-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-06 20:57:17 [http-nio-8885-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-06 20:57:17 [http-nio-8885-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'employeeService' succeeded:
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T20:59:18.154821500-03:00[America/Sao_Paulo]: CircuitBreaker 'employeeService' recorded a successful call. Elapsed time: 337 ms
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'courseService' succeeded:
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T20:59:18.537771200-03:00[America/Sao_Paulo]: CircuitBreaker 'courseService' recorded a successful call. Elapsed time: 379 ms
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'enrollmentService' succeeded:
+2025-05-06 20:59:18 [http-nio-8885-exec-4] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T20:59:18.590500-03:00[America/Sao_Paulo]: CircuitBreaker 'enrollmentService' recorded a successful call. Elapsed time: 18549 ms
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'employeeService' succeeded:
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event SUCCESS published: 2025-05-06T21:00:50.710466600-03:00[America/Sao_Paulo]: CircuitBreaker 'employeeService' recorded a successful call. Elapsed time: 26 ms
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'courseService' recorded an exception as failure:
+org.springframework.web.reactive.function.client.WebClientResponseException$InternalServerError: 500 Internal Server Error from GET http://localhost:8882/api/v1/courses/9bf21c49-efa6-48c2-92b8-f64c2c14ff1e
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:332)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 500 INTERNAL_SERVER_ERROR from GET http://localhost:8882/api/v1/courses/9bf21c49-efa6-48c2-92b8-f64c2c14ff1e [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:332)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:824)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:796)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.gateway.CourseClient.existsById(CourseClient.java:30)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateCheckedSupplier$0(Bulkhead.java:70)
+		at io.github.resilience4j.bulkhead.Bulkhead.executeCheckedSupplier(Bulkhead.java:471)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.handleJoinPoint(BulkheadAspect.java:194)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.proceed(BulkheadAspect.java:147)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.lambda$bulkheadAroundAdvice$1(BulkheadAspect.java:120)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:37)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.bulkheadAroundAdvice(BulkheadAspect.java:121)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.circuitbreaker.CircuitBreaker.lambda$decorateCheckedSupplier$0(CircuitBreaker.java:71)
+		at io.github.resilience4j.circuitbreaker.CircuitBreaker.executeCheckedSupplier(CircuitBreaker.java:739)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.defaultHandling(CircuitBreakerAspect.java:179)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.proceed(CircuitBreakerAspect.java:126)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.lambda$circuitBreakerAroundAdvice$0(CircuitBreakerAspect.java:108)
+		at io.github.resilience4j.spring6.fallback.DefaultFallbackDecorator.lambda$decorate$0(DefaultFallbackDecorator.java:36)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:39)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.circuitBreakerAroundAdvice(CircuitBreakerAspect.java:109)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.retry.Retry.lambda$decorateCheckedSupplier$1(Retry.java:135)
+		at io.github.resilience4j.retry.Retry.executeCheckedSupplier(Retry.java:350)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.handleDefaultJoinPoint(RetryAspect.java:175)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.proceed(RetryAspect.java:132)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.lambda$retryAroundAdvice$0(RetryAspect.java:116)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:37)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.retryAroundAdvice(RetryAspect.java:117)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.gateway.CourseClient$$SpringCGLIB$$0.existsById(<generated>)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.repository.EnrollmentRepositoryAdapter.save(EnrollmentRepositoryAdapter.java:31)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.application.CreateEnrollmentService.create(CreateEnrollmentService.java:17)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.api.controller.EnrollmentController.create(EnrollmentController.java:47)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateCheckedSupplier$0(Bulkhead.java:70)
+		at io.github.resilience4j.bulkhead.Bulkhead.executeCheckedSupplier(Bulkhead.java:471)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.handleJoinPoint(BulkheadAspect.java:194)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.proceed(BulkheadAspect.java:147)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.lambda$bulkheadAroundAdvice$1(BulkheadAspect.java:120)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:37)
+		at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.bulkheadAroundAdvice(BulkheadAspect.java:121)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.circuitbreaker.CircuitBreaker.lambda$decorateCheckedSupplier$0(CircuitBreaker.java:71)
+		at io.github.resilience4j.circuitbreaker.CircuitBreaker.executeCheckedSupplier(CircuitBreaker.java:739)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.defaultHandling(CircuitBreakerAspect.java:179)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.proceed(CircuitBreakerAspect.java:126)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.lambda$circuitBreakerAroundAdvice$0(CircuitBreakerAspect.java:108)
+		at io.github.resilience4j.spring6.fallback.DefaultFallbackDecorator.lambda$decorate$0(DefaultFallbackDecorator.java:36)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:39)
+		at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.circuitBreakerAroundAdvice(CircuitBreakerAspect.java:109)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+		at io.github.resilience4j.retry.Retry.lambda$decorateCheckedSupplier$1(Retry.java:135)
+		at io.github.resilience4j.retry.Retry.executeCheckedSupplier(Retry.java:350)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.handleDefaultJoinPoint(RetryAspect.java:175)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.proceed(RetryAspect.java:132)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.lambda$retryAroundAdvice$0(RetryAspect.java:116)
+		at io.github.resilience4j.spring6.fallback.DefaultFallbackDecorator.lambda$decorate$0(DefaultFallbackDecorator.java:36)
+		at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:39)
+		at io.github.resilience4j.spring6.retry.configure.RetryAspect.retryAroundAdvice(RetryAspect.java:117)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+		at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+		at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+		at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+		at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.api.controller.EnrollmentController$$SpringCGLIB$$0.create(<generated>)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event ERROR published: 2025-05-06T21:00:50.963421800-03:00[America/Sao_Paulo]: CircuitBreaker 'courseService' recorded an error: 'org.springframework.web.reactive.function.client.WebClientResponseException$InternalServerError: 500 Internal Server Error from GET http://localhost:8882/api/v1/courses/9bf21c49-efa6-48c2-92b8-f64c2c14ff1e'. Elapsed time: 242 ms
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - CircuitBreaker 'enrollmentService' recorded an exception as failure:
+jakarta.persistence.EntityNotFoundException: Curso com ID 9bf21c49-efa6-48c2-92b8-f64c2c14ff1e não encontrado
+	at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.repository.EnrollmentRepositoryAdapter.save(EnrollmentRepositoryAdapter.java:33)
+	at br.com.nttdata.nttskillboost.activitymanagementservice.application.CreateEnrollmentService.create(CreateEnrollmentService.java:17)
+	at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.api.controller.EnrollmentController.create(EnrollmentController.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.github.resilience4j.bulkhead.Bulkhead.lambda$decorateCheckedSupplier$0(Bulkhead.java:70)
+	at io.github.resilience4j.bulkhead.Bulkhead.executeCheckedSupplier(Bulkhead.java:471)
+	at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.handleJoinPoint(BulkheadAspect.java:194)
+	at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.proceed(BulkheadAspect.java:147)
+	at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.lambda$bulkheadAroundAdvice$1(BulkheadAspect.java:120)
+	at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:37)
+	at io.github.resilience4j.spring6.bulkhead.configure.BulkheadAspect.bulkheadAroundAdvice(BulkheadAspect.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.github.resilience4j.circuitbreaker.CircuitBreaker.lambda$decorateCheckedSupplier$0(CircuitBreaker.java:71)
+	at io.github.resilience4j.circuitbreaker.CircuitBreaker.executeCheckedSupplier(CircuitBreaker.java:739)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.defaultHandling(CircuitBreakerAspect.java:179)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.proceed(CircuitBreakerAspect.java:126)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.lambda$circuitBreakerAroundAdvice$0(CircuitBreakerAspect.java:108)
+	at io.github.resilience4j.spring6.fallback.DefaultFallbackDecorator.lambda$decorate$0(DefaultFallbackDecorator.java:36)
+	at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:39)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerAspect.circuitBreakerAroundAdvice(CircuitBreakerAspect.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at io.github.resilience4j.retry.Retry.lambda$decorateCheckedSupplier$1(Retry.java:135)
+	at io.github.resilience4j.retry.Retry.executeCheckedSupplier(Retry.java:350)
+	at io.github.resilience4j.spring6.retry.configure.RetryAspect.handleDefaultJoinPoint(RetryAspect.java:175)
+	at io.github.resilience4j.spring6.retry.configure.RetryAspect.proceed(RetryAspect.java:132)
+	at io.github.resilience4j.spring6.retry.configure.RetryAspect.lambda$retryAroundAdvice$0(RetryAspect.java:116)
+	at io.github.resilience4j.spring6.fallback.DefaultFallbackDecorator.lambda$decorate$0(DefaultFallbackDecorator.java:36)
+	at io.github.resilience4j.spring6.fallback.FallbackExecutor.execute(FallbackExecutor.java:39)
+	at io.github.resilience4j.spring6.retry.configure.RetryAspect.retryAroundAdvice(RetryAspect.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at br.com.nttdata.nttskillboost.activitymanagementservice.adapters.api.controller.EnrollmentController$$SpringCGLIB$$0.create(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-06 21:00:50 [http-nio-8885-exec-9] DEBUG i.g.r.c.i.CircuitBreakerStateMachine - Event ERROR published: 2025-05-06T21:00:50.966941800-03:00[America/Sao_Paulo]: CircuitBreaker 'enrollmentService' recorded an error: 'jakarta.persistence.EntityNotFoundException: Curso com ID 9bf21c49-efa6-48c2-92b8-f64c2c14ff1e não encontrado'. Elapsed time: 282 ms
+2025-05-06 21:01:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:06:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:11:49 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:14:08 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:14:08 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746576848642, current=DOWN, previous=UP]
+2025-05-06 21:14:08 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:14:08 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:14:08 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:14:09 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:27:45 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 31800 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:27:45 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:27:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:27:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:27:45 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:27:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:27:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:27:45 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 21:27:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:27:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 204 ms. Found 1 JPA repository interface.
+2025-05-06 21:27:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9414b8d-8f50-3fbd-a3cd-fa7c1672b9ef
+2025-05-06 21:27:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:27:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:27:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:27:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:27:49 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:27:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4558 ms
+2025-05-06 21:27:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:27:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cbb394b
+2025-05-06 21:27:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:27:51 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:27:52 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.090s)
+2025-05-06 21:27:52 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:27:52 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:27:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:27:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:27:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:27:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:27:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:27:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:27:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:27:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:27:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:27:56 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:27:58 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:27:59 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:28:01 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:28:01 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:28:01 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:28:01 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:28:01 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:28:01 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:28:01 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:28:02 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:28:02 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:28:02 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:28:02 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746577682133 with initial instances count: 4
+2025-05-06 21:28:02 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:28:02 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746577682142, current=UP, previous=STARTING]
+2025-05-06 21:28:02 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:28:02 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:28:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:28:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:28:02 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:28:03 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:28:04 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:28:04 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 23.779 seconds (process running for 24.782)
+2025-05-06 21:30:06 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:30:06 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746577806445, current=DOWN, previous=UP]
+2025-05-06 21:30:06 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:30:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:30:06 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:30:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:30:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:30:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 21:30:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 21:30:08 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 21:30:11 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 21:30:11 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 21:30:11 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-06 21:30:18 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 4416 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:30:18 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:30:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:30:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:30:18 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:30:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:30:18 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:30:18 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 21:30:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:30:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 238 ms. Found 1 JPA repository interface.
+2025-05-06 21:30:21 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9414b8d-8f50-3fbd-a3cd-fa7c1672b9ef
+2025-05-06 21:30:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:30:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:30:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:30:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:30:23 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:30:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4969 ms
+2025-05-06 21:30:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:30:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f9d47a3
+2025-05-06 21:30:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:30:25 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:30:25 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.061s)
+2025-05-06 21:30:25 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:30:25 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:30:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:30:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:30:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:30:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:30:26 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:30:26 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:30:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:30:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:30:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:30:30 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:30:32 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:30:33 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:30:35 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:30:35 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:30:35 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:30:35 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:30:35 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:30:35 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:30:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:30:36 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:30:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:30:36 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:30:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746577836086 with initial instances count: 3
+2025-05-06 21:30:36 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:30:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746577836103, current=UP, previous=STARTING]
+2025-05-06 21:30:36 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:30:36 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:30:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:30:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:30:36 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:30:37 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:30:38 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:30:38 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 24.326 seconds (process running for 25.369)
+2025-05-06 21:32:22 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:32:22 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746577942006, current=DOWN, previous=UP]
+2025-05-06 21:32:22 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:32:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:32:22 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:32:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:33:05 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 29044 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:33:05 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:33:05 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:33:05 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:33:05 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:33:05 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:33:05 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=6129a8e9a7afb6dc35da270e8a3325eb85a9db17, state=null
+2025-05-06 21:33:05 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 58 properties.
+2025-05-06 21:33:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:33:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 430 ms. Found 1 JPA repository interface.
+2025-05-06 21:33:09 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9414b8d-8f50-3fbd-a3cd-fa7c1672b9ef
+2025-05-06 21:33:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:33:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:33:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:33:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:33:12 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:33:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7108 ms
+2025-05-06 21:33:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:33:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12d33d7a
+2025-05-06 21:33:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:33:15 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:33:16 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.094s)
+2025-05-06 21:33:16 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:33:16 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:33:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:33:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:33:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:33:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:33:17 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:33:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:33:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:33:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:33:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:33:23 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:33:25 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:33:27 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:33:28 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:33:28 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:33:29 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:33:29 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:33:29 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:33:29 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:33:29 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746578009490 with initial instances count: 4
+2025-05-06 21:33:29 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:33:29 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578009505, current=UP, previous=STARTING]
+2025-05-06 21:33:29 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:33:29 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:33:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:33:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:33:29 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:33:30 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:33:31 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:33:31 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 30.787 seconds (process running for 31.642)
+2025-05-06 21:37:42 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:37:42 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578262063, current=DOWN, previous=UP]
+2025-05-06 21:37:42 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:37:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:37:42 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:37:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:37:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:37:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 21:37:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 21:37:45 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 21:37:48 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 21:37:48 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 21:37:48 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-06 21:38:36 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 22416 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:38:36 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:38:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:38:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:38:36 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:38:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:38:36 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:38:36 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 68 properties.
+2025-05-06 21:38:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:38:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 342 ms. Found 1 JPA repository interface.
+2025-05-06 21:38:40 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9414b8d-8f50-3fbd-a3cd-fa7c1672b9ef
+2025-05-06 21:38:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:38:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:38:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:38:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:38:42 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:38:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6126 ms
+2025-05-06 21:38:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:38:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c7c22ce
+2025-05-06 21:38:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:38:45 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:38:45 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.099s)
+2025-05-06 21:38:45 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:38:45 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:38:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:38:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:38:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:38:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:38:47 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:38:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:38:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:38:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:38:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:38:52 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:38:54 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:38:55 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:38:57 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:38:57 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:38:57 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:38:57 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:38:57 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:38:57 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:38:57 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746578337981 with initial instances count: 3
+2025-05-06 21:38:57 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:38:57 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578337990, current=UP, previous=STARTING]
+2025-05-06 21:38:57 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:38:58 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:38:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:38:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:38:58 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:38:59 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:39:00 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:39:00 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 30.087 seconds (process running for 31.184)
+2025-05-06 21:42:17 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:42:17 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578537378, current=DOWN, previous=UP]
+2025-05-06 21:42:17 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:42:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:42:17 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:42:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:42:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:42:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 21:42:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 21:42:19 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 21:42:22 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 21:42:22 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 21:42:22 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-06 21:42:30 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 9360 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:42:30 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:42:30 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:42:30 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:42:30 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:42:30 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:42:30 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:42:30 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 68 properties.
+2025-05-06 21:42:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:42:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-05-06 21:42:32 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9414b8d-8f50-3fbd-a3cd-fa7c1672b9ef
+2025-05-06 21:42:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:42:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:42:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:42:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:42:33 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:42:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3553 ms
+2025-05-06 21:42:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:42:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e200307
+2025-05-06 21:42:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:42:36 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:42:36 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.057s)
+2025-05-06 21:42:36 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:42:36 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:42:36 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:42:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:42:37 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:42:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:42:37 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:42:37 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:42:38 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:42:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:42:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:42:41 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:42:44 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:42:45 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:42:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:42:47 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:42:47 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:42:47 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:42:47 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:42:47 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:42:47 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746578567602 with initial instances count: 4
+2025-05-06 21:42:47 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:42:47 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578567616, current=UP, previous=STARTING]
+2025-05-06 21:42:47 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:42:47 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:42:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:42:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:42:47 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:42:48 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:42:49 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:42:49 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 23.547 seconds (process running for 24.349)
+2025-05-06 21:45:13 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:45:13 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578713858, current=DOWN, previous=UP]
+2025-05-06 21:45:13 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:45:13 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:45:13 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:45:13 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:45:15 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:45:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 21:45:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 21:45:27 [main] INFO  b.c.n.n.a.RunApplication - Starting RunApplication using Java 21.0.5 with PID 20812 (C:\dev\nttdata\NTTSkillBoost\enrollmentservice\target\classes started by roger in C:\dev\nttdata\NTTSkillBoost\enrollmentservice)
+2025-05-06 21:45:27 [main] INFO  b.c.n.n.a.RunApplication - The following 1 profile is active: "dev"
+2025-05-06 21:45:27 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:45:27 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[default], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:45:27 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 1 property sources with 1 properties.
+2025-05-06 21:45:27 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888/api
+2025-05-06 21:45:27 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=enrollment-service, profiles=[dev], label=null, version=27a4c03e7e24a035a1ebd97aa02e9a64620605d4, state=null
+2025-05-06 21:45:27 [main] DEBUG o.s.c.c.c.ConfigServerConfigDataLoader - Environment enrollment-service has 2 property sources with 68 properties.
+2025-05-06 21:45:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-06 21:45:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 281 ms. Found 1 JPA repository interface.
+2025-05-06 21:45:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=41f995c8-414f-368c-b888-31e4811779fc
+2025-05-06 21:45:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8885 (http)
+2025-05-06 21:45:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:45:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-06 21:45:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-06 21:45:32 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-06 21:45:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4924 ms
+2025-05-06 21:45:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-06 21:45:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65011123
+2025-05-06 21:45:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-06 21:45:34 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://192.168.100.197:5436/nkbost-enrollment-db (PostgreSQL 16.8)
+2025-05-06 21:45:34 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.068s)
+2025-05-06 21:45:35 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1.1
+2025-05-06 21:45:35 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-06 21:45:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-06 21:45:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-06 21:45:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-06 21:45:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-06 21:45:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-06 21:45:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-06 21:45:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-06 21:45:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:45:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-06 21:45:40 [main] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-06 21:45:42 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:45:43 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:45:45 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:45:45 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-05-06 21:45:45 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-05-06 21:45:45 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 30 endpoints beneath base path '/actuator'
+2025-05-06 21:45:45 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-06 21:45:45 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-06 21:45:45 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 12
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746578745774 with initial instances count: 4
+2025-05-06 21:45:45 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ENROLLMENT-SERVICE with eureka with status UP
+2025-05-06 21:45:45 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578745788, current=UP, previous=STARTING]
+2025-05-06 21:45:45 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:45:45 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:45:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8885"]
+2025-05-06 21:45:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8885 (http) with context path '/api'
+2025-05-06 21:45:45 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8885
+2025-05-06 21:45:46 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:45:47 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-05-06 21:45:47 [main] INFO  b.c.n.n.a.RunApplication - Started RunApplication in 25.973 seconds (process running for 27.653)
+2025-05-06 21:48:03 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application ENROLLMENT-SERVICE with eureka with status DOWN
+2025-05-06 21:48:03 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746578883095, current=DOWN, previous=UP]
+2025-05-06 21:48:03 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885: registering service...
+2025-05-06 21:48:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-06 21:48:03 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - registration status: 204
+2025-05-06 21:48:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-06 21:48:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-06 21:48:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-06 21:48:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-06 21:48:05 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-06 21:48:08 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-06 21:48:08 [DiscoveryClient-%d] WARN  c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+2025-05-06 21:48:08 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ENROLLMENT-SERVICE/localhost:enrollment-service:8885 - deregister  status: 200
+2025-05-06 21:48:08 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

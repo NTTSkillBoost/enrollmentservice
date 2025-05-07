@@ -8,4 +8,5 @@ import java.util.UUID;
 public interface GetEnrollmentUseCase {
     Enrollment findById(UUID id);
     List<Enrollment> findAll();
+    boolean isStudentEnrolled(UUID studentId, UUID courseId);
 }
